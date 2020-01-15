@@ -2,9 +2,9 @@ class River
 
   attr_reader :route, :destination
 
-  def initialize(name)
+  def initialize(name,fish)
     @river_name = name
-    @fish = []
+    @fish = fish
   end
 
   def get_name

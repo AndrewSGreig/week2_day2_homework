@@ -9,10 +9,9 @@ require_relative("../fish.rb")
 class TestRiver < MiniTest::Test
 
   def setup()
-    @river = River.new("Amazon")
+    @river = River.new("Amazon",["Frank", "Nemo","Goldie"])
     @fish = Fish.new("Frank","herring")
     @bears = Bears.new("Yogi", "Grizzly")
-
   end
 
 
@@ -22,7 +21,7 @@ class TestRiver < MiniTest::Test
 
   def test_count_river_fish
     @river.add_fish_to_river("Fred", "goldfish")
-    assert_equal(1, @river.fish_count())
+    assert_equal(4, @river.fish_count())
   end
 
   # def test_get_bear
@@ -34,9 +33,9 @@ class TestRiver < MiniTest::Test
     # => add fish to bear stomach array
     # => remove fish from river fish array
 
-    @river.add_fish_to_river("Frank", "cod")
-    @river.add_fish_to_river("Swimmer", "salmon")
-    @river.add_fish_to_river("Goldie", "great white shark")
+    # @river.add_fish_to_river("Frank", "cod")
+    # @river.add_fish_to_river("Swimmer", "salmon")
+    # @river.add_fish_to_river("Goldie", "great white shark")
 
 
     if @river.fish_count > 0
