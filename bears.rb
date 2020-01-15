@@ -29,6 +29,7 @@ class Bears
   end
 
   def bear_food_count
+    p @stomach
     return @stomach.count
   end
 

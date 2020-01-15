@@ -34,8 +34,8 @@ class TestRiver < MiniTest::Test
     # => add fish to bear stomach array
     # => remove fish from river fish array
 
-    # @river.add_fish_to_river("Frank", "cod")
-    # @river.add_fish_to_river("Swimmer", "salmon")
+    @river.add_fish_to_river("Frank", "cod")
+    @river.add_fish_to_river("Swimmer", "salmon")
     @river.add_fish_to_river("Goldie", "great white shark")
 
 
